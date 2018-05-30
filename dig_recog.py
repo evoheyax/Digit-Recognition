@@ -44,7 +44,7 @@ if __name__ == "__main__":
     unseen = mpimg.imread("unseen_dig.png")[:, :, 0]
     unseen_interpoled, unseen_interpoled_flat = prf.interpol_im(unseen, plot_new_im = True)
 
-    plt.grid("off")
+    plt.grid(True)
     plt.imshow(dig_img[15], cmap="Greys")
     plt.show()
 
